@@ -1,0 +1,59 @@
+#entireForm {
+width: 90%;
+max-width: 800px;
+background: lightgrey;
+margin: 30px auto;
+}
+
+/*form spacing*/
+
+}
+
+form {
+  width: 80%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+lable + input {
+  width: 30%;
+  margin: 0 30% 0 4%;
+}
+
+
+form section div {
+  float: left;
+  padding: 10px;
+}
+
+form section div.full {
+  clear: both;
+}
+
+form section div label {
+  display: block;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+}
+
+/*Table*/
+
+table {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+tr:hover {
+  background-color: pink;
+}
+
+tr:nth-child(even) {
+  background-color: ffffff;
+}
+tr:first-child {
+  background-color: pink;
+}

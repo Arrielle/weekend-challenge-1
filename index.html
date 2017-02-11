@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Monthly Salary Expenditures</title>
+    <script src="vendor/jquery.js" charset="utf-8"></script>
+    <script src="client.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <div id = entireForm>
+    <div id = employeeForm>
+      <h1>Employee Information</h1>
+      <form style = "overflow-x:auto" name = "message" method="post">
+        <section>
+          <div>
+            <label for = "firstName">First Name</label>
+            <input type= "text" id = "firstName" placeholder = "First Name">
+          </div>
+          <div>
+            <label for = "lastName">Last Name</label>
+            <input type= "text" id = "lastName" placeholder = "Last Name">
+          </div>
+        </section>
+        <section>
+          <div>
+            <label for = "idNumber">ID Number</label>
+            <input type= "text" id = "idNumber" placeholder = "ID Number">
+          </div>
+          <div>
+            <label for = "jobTitle">Job Title</label>
+            <input type= "text" id = "jobTitle" placeholder = "Job Title">
+          </div>
+        </section>
+        <section>
+          <div>
+            <label for = "annualSalary">Annual Salary</label>
+            <input type= "text" id = "annualSalary" placeholder = "Annual Salary">
+          </div>
+    <div>
+      <button type="button" id = "formButton" name="button">Enter</button>
+    </div>
+  </section>
+  </div>
+    <div  id = employeeList>
+      <h1>Employee List</h1>
+      <div id = employeeTableContainer>
+        <table id = employeeTable>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>ID Number</th>
+            <th>Job Title</th>
+            <th>Annual Salary</th>
+            <th>Delete</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id = monthlySalaryExpenditure></div>
+  </div>
+  </body>
+</html>
+
+<!-- First Name
+Last Name
+ID Number
+Job Title
+Annual Salary
+
+SUBMIT BUTTON
+
+I need to find out how to clear the form once enter has been clicked
+
+employee info needs to be set to an array ->
+
+how will I pull the employee information from the form, and
+enter it into the array?
+
+when an employee is deleted through the on click event we will need to
+update the array somehow
+ -->
