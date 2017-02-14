@@ -1,33 +1,35 @@
 #entireForm {
 width: 90%;
 max-width: 800px;
-background: lightgrey;
-margin: 30px auto;
+margin: auto;
 }
 
 #totalExpenditure {
   padding-bottom: 40px;
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
 }
 
 #employeeList {
   padding: 40px;
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
 }
 
 #alertMessage {
   color: #FF8800;
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
+}
+
+#myForm {
+  background: lightgrey;
 }
 
 #employeeForm {
   padding-top: 40px;
-  width: 80%;
+  width: 90%;
   max-width: 800px;
-  background: lightgrey;
   margin: 10px auto;
 }
 
@@ -75,6 +77,11 @@ form section div label {
 table {
   width: 100%;
   background-color: #f1f1f1;
+  border-collapse: collapse;
+}
+
+th {
+  height: 50px;
 }
 
 tr:hover {
@@ -99,7 +106,7 @@ tr:first-child {
 /*BUTTONS */
 
 #formButton {
-	margin-top: 15px;
+	margin-top: 25px;
 	margin-bottom: 5px;
 	background-color: #FF8800;
 	padding: 15px 85px;

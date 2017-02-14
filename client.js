@@ -1,3 +1,4 @@
+//object constructor
 function Employee(inFirstName, inLastName, inIDNumber, inJobTitle, inAnnualSalary) {
   this.firstName = inFirstName,
   this.lastName = inLastName,
@@ -5,7 +6,7 @@ function Employee(inFirstName, inLastName, inIDNumber, inJobTitle, inAnnualSalar
   this.jobTitle = inJobTitle,
   this.annualSalary = parseInt(inAnnualSalary)
 };
-
+//calculates all employee's salaries and divides by 12
 function calculateMonthlyExpenditure(){
   var allEmployeeSalary = 0;
   for (var i = 0; i < employeeArray.length; i++) {
@@ -26,10 +27,7 @@ $(document).ready(function() {
     var idNumber = $('#idNumber').val().toUpperCase();
     var jobTitle = $('#jobTitle').val().toUpperCase();
     var annualSalary = $('#annualSalary').val();
-
-    //if statement checks to see if the value entered for annualSalary was a number.
-    //if NOT a number then an alert message shows below the form.
-    //if it IS a number, my initial code is run.
+    //extra functionality
     if (!$.isNumeric(annualSalary)) {
       $('#alertMessage').text('The salary you entered was not a number. Please try again.')
     } else {
@@ -37,19 +35,17 @@ $(document).ready(function() {
     $('#employeeTable').append('<tr><td>' + firstName + '</td><td>' +
     lastName + '</td><td>' + idNumber + '</td><td>' + jobTitle + '</td><th>' +
     annualSalary + '</th><th><button type="button" class = "deleteButton" name="button">Delete</button></th></tr>');
-    //object constructor
-
-    // //Creates an object from the input data
+    // //Creates an object from the input data and the object constructor
     var employeeData = new Employee(firstName, lastName, idNumber, jobTitle, annualSalary)
     //pushes object onto the array.
     employeeArray.push(employeeData);
-    //making a function to find total salary amount paid by the company each month.
+    //call the function and store it in a variable
     var monthlyExpenditureOutput = calculateMonthlyExpenditure();
-//ends my salary function
-    //Now, I need to add the result of my salary function to the DOM
+    //Adds the result of my salary function to the DOM
     $('#totalExpenditure').children().children().last().text('Total Monthly Expenditure: ' + monthlyExpenditureOutput);
-    //resets from once it's been submitted
+    //resets form once it's been submitted
     document.forms['myForm'].reset();
+    //resets the alert message if the submit button has been pressed and there is no error in the salary value
     $('#alertMessage').text('');
   };//ends the if else
   }); //ends onclick submit event listener
@@ -66,8 +62,6 @@ $(document).ready(function() {
     //making a function to recalculate the total salary amount paid by the company each month.
     var monthlyExpenditureOutput = calculateMonthlyExpenditure();
     $('#totalExpenditure').children().children().last().text('Total Monthly Expenditure: ' + monthlyExpenditureOutput);
-
-
   }); //ends onclick delete button event listener
 }); //ends doc.ready event listener
 
