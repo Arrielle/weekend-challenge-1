@@ -5,21 +5,56 @@ background: lightgrey;
 margin: 30px auto;
 }
 
-/*form spacing*/
-
-}
-
-form {
+#totalExpenditure {
+  padding-bottom: 40px;
   width: 80%;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin: 10px auto;
 }
+
+#employeeList {
+  padding: 40px;
+  width: 80%;
+  margin: 10px auto;
+}
+
+#alertMessage {
+  color: #FF8800;
+  width: 80%;
+  margin: 10px auto;
+}
+
+#employeeForm {
+  padding-top: 40px;
+  width: 80%;
+  max-width: 800px;
+  background: lightgrey;
+  margin: 10px auto;
+}
+
+
+h1 {
+  padding: 20px;
+  text-align: left;
+}
+
+
+
+/*EMPLOYEE INFORMATION*/
 
 lable + input {
   width: 30%;
   margin: 0 30% 0 4%;
 }
 
+input {
+  margin-bottom: 10px;
+  font-size: 1em;
+  padding: 15px 10px 10px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  width: 80%;
+  max-width: auto;
+}
 
 form section div {
   float: left;
@@ -34,26 +69,65 @@ form section div label {
   display: block;
 }
 
-h1 {
-  padding: 20px;
-  text-align: center;
-}
 
-/*Table*/
+/*EMPLOYEE LIST (TABLE)*/
 
 table {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 100%;
+  background-color: #f1f1f1;
 }
 
 tr:hover {
-  background-color: pink;
+  background-color: #FF8800;
 }
 
 tr:nth-child(even) {
-  background-color: ffffff;
+  background-color: #ffffff;
 }
+
+tr:first-child:hover {
+  background-color: ##ff8800;
+}
+
+
 tr:first-child {
-  background-color: pink;
+  background-color: #FF8800;
+  color: white;
+}
+
+
+/*BUTTONS */
+
+#formButton {
+	margin-top: 15px;
+	margin-bottom: 5px;
+	background-color: #FF8800;
+	padding: 15px 85px;
+  font-size: 1em;
+	border-radius: 5px;
+	border: 1px solid #FF8800;
+	transition: .5s;
+	display: inline-block;
+	cursor: pointer;
+	width: 30%;
+	color: #fff;
+}
+
+#formButton:hover, .button:hover {
+	background: #BD6500;
+}
+
+
+button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #2e2e2e;
+  padding: 10px 50px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #2e2e2e;
+  display: inline-block;
+  cursor: pointer;
+  width: 80%;
+  color: #fff;
 }
