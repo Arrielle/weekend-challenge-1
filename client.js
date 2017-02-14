@@ -65,8 +65,6 @@ $(document).ready(function() {
   }); //ends onclick delete button event listener
 }); //ends doc.ready event listener
 
-
-
 // has submit been pressed?
 // if yes
 // Create new object based on input
