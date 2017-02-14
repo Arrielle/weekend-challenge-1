@@ -2,6 +2,9 @@
 width: 90%;
 max-width: 800px;
 margin: auto;
+border: 1px solid #4E4D50;
+border-radius: 10px;
+color: #4E4D50;
 }
 
 #totalExpenditure {
@@ -127,11 +130,11 @@ tr:first-child {
 button {
   margin-top: 5px;
   margin-bottom: 5px;
-  background-color: #2e2e2e;
+  background-color: #4E4D50;
   padding: 10px 50px;
   font-size: 1em;
   border-radius: 5px;
-  border: 1px solid #2e2e2e;
+  border: 1px solid #4E4D50;
   display: inline-block;
   cursor: pointer;
   width: 80%;
